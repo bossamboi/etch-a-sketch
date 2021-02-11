@@ -3,14 +3,17 @@ container = document.querySelector('.container');
 
 let pixelNumber = 256;
 populateGrid(pixelNumber);
-
 addInk();
 
 function populateGrid(number) {
     for (i = 1; i <= number; i++) {
     const pixel = document.createElement('div');
-    //pixel.setAttribute('id', `pixel-${i}`)
     pixel.classList.add('pixel-class');
+
+    const sqrtNumber = 800 / (number ** (1/2))
+    pixel.style.width = `${sqrtNumber}px`;
+    pixel.style.height = `${sqrtNumber}px`;
+
     container.appendChild(pixel);
 }
 }
@@ -45,7 +48,6 @@ resetButton.addEventListener('click', () => {
     }
     
     pixelNumber = parseInt(newLength) ** 2;
-    console.log(pixelNumber);
     populateGrid(pixelNumber);
     addInk();
 })

@@ -10,7 +10,7 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: purple;
+    background-color: brown;
     width: 800px;
     height: 800px;
     padding: 10px;
@@ -22,10 +22,8 @@ body {
 }
 
 .pixel-class {
-    background-color: yellow;
+    background-color: white;
     margin: 0px;
-    width: 50px;
-    height: 50px;
 }
 
 .pixel-hover-bw {

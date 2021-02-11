@@ -42,12 +42,12 @@ const resetButton = document.querySelector('button');
 resetButton.addEventListener('click', () => {
     clearGrid(container);
     let newLength = prompt('How many squares per side? [16-100]', 16)
-    if (newLength < 16 || newLength > 100) {
+    if (parseInt(newLength, 10) < 16 || parseInt(newLength, 10) > 100) {
         alert('Can you read?! Try again dummy...');
         newLength = prompt('How many squares per side? [16-100]', 16)
-    }
+    } 
     
-    pixelNumber = parseInt(newLength) ** 2;
+    pixelNumber = parseInt(newLength, 10) ** 2;
     populateGrid(pixelNumber);
     addInk();
 })

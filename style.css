@@ -1,5 +1,6 @@
 h1 {
     margin: 10px;
+    color:  grey;
 }
 
 body {
@@ -10,13 +11,10 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap;
-    background-color: brown;
+    background-color: grey;
     width: 800px;
     height: 800px;
     padding: 10px;
-    border-style:solid;
-    border-color: black;
-    border-width: thin;
     margin-top:20px;
 
 }
@@ -27,6 +25,6 @@ body {
 }
 
 .pixel-hover-bw {
-    background-color: black;
+    background-color: rgb(96, 96, 255);
 
 }
